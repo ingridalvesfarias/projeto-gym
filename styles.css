@@ -1,0 +1,112 @@
+:root {
+    --primary: #00ff88;
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --text: #ececec;
+    --input: #252525;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center; 
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px; 
+}
+
+.card {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+h1 { 
+    font-size: 1.6rem; 
+    margin-bottom: 0.5rem; 
+}
+
+h1 span { 
+    color: var(--primary); 
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: var(--input);
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+#btnGerar {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+    color: #000;
+}
+
+.button-group div {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#btnLimpar, #btnCopiar {
+    flex: 1;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#mensagemStatus {
+    margin-top: 15px;
+    height: 20px;
+    font-size: 0.85rem;
+}
+
+.resultado-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    max-height: 400px;  
+    overflow-y: auto;  
+    padding-right: 10px; 
+}
+
+.resultado-container::-webkit-scrollbar {
+    width: 6px;
+}
+.resultado-container::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 10px;
+}
